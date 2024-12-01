@@ -14,7 +14,6 @@
     </properties>
 
     <dependencies>
-        <!-- JUnit 5 függőség -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -22,7 +21,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Mockito -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
@@ -30,7 +28,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Logback -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
@@ -39,7 +36,6 @@
     </dependencies>
 
     <dependencies>
-        <!-- SQLite JDBC Driver -->
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
@@ -50,7 +46,6 @@
 
     <build>
         <plugins>
-            <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -58,12 +53,11 @@
                 <configuration>
                     <release>21</release>
                     <compilerArgs>
-                        <arg>--enable-preview</arg> <!-- Engedélyezd a preview funkciókat -->
+                        <arg>--enable-preview</arg>
                     </compilerArgs>
                 </configuration>
             </plugin>
 
-            <!-- Maven Jar Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -77,7 +71,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven Assembly Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -103,7 +96,6 @@
                 </executions>
             </plugin>
 
-            <!-- JaCoCo Maven Plugin -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -124,7 +116,6 @@
                 </executions>
             </plugin>
 
-            <!-- Maven Checkstyle Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
