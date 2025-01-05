@@ -16,7 +16,7 @@ public class Main {
 
         Jatek jatek = new Jatek(player1Name, player2Name);
 
-        String fileName = "oard.txt";
+        String fileName = "tabla.txt";
         jatek.getBoard().loadFromFile(fileName);
 
         jatek.startGame();
@@ -30,7 +30,7 @@ public class Main {
     }
 
     private static void askToSave(Scanner scanner, Jatek jatek) {
-        System.out.println("Mentsem a játék állását (igen/nem)?");
+        System.out.println(" ");
 
         while (true) {
             try {
