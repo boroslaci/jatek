@@ -1,0 +1,25 @@
+A tervezési minták bevált megoldások ismétlődő problémákra, amelyekkel szoftverfejlesztés során találkozhatunk.
+Ezek nem konkrét kódok, hanem olyan általános irányelvek és sablonok, amelyek segítenek hatékonyabb és strukturáltabb szoftverek készítésében.
+
+Három fő kategóriájuk van:
+Kreációs minták: Az objektumok létrehozásának hatékony módjaira összpontosítanak.
+Strukturális minták: Az osztályok és objektumok közötti kapcsolatokkal foglalkoznak.
+Viselkedési minták: Az objektumok közötti kommunikációt és viselkedést definiálják.
+MVC (Model-View-Controller) minta. Az MVC egy architekturális minta, amely az alkalmazást három fő rétegre bontja:
+
+Model (Modell):
+-A rendszer adatainak és üzleti logikájának reprezentációja.
+-A modell felelős az adatok kezeléséért, például adatbázisból való betöltésért vagy frissítésért.
+-A nézet és a vezérlő nem fér közvetlenül az adatokhoz, csak a modellen keresztül.
+
+View (Nézet):
+-Az adatokat jeleníti meg a felhasználónak.
+-Felhasználói felületet (UI) valósít meg, például weboldalak vagy alkalmazásképernyők.
+-Nem tartalmaz logikát, csak az adatok megjelenítéséért felel.
+
+Controller (Vezérlő):
+-Közvetítőként működik a modell és a nézet között.
+-Fogadja a felhasználói beviteleket (pl. kattintások, űrlapok), és ezek alapján módosítja a modellt vagy frissíti a nézetet.
+
+A tervezési minták segítenek a bonyolult rendszerek strukturálásában, karbantarthatóságában és rugalmasságában.
+Az MVC minta az alkalmazás architekturális felosztását segíti. 
